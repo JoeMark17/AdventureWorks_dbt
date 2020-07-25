@@ -1,0 +1,49 @@
+version: 2
+
+sources:
+  - name: AdventureWorks_HumanResources
+    database: ADVENTUREWORKS_DB
+    schema: HUMANRESOURCES
+    description: Human Resources Schema from Snowflake schema
+    tables: 
+      - name: EMPLOYEE
+
+  - name: AdventureWorks_Person
+    database: ADVENTUREWORKS_DB
+    schema: PERSON
+    description: Person Schema from Snowflake schema
+    tables: 
+      - name: ADDRESS
+      - name: ADDRESSTYPE
+      - name: BUSINESSENTITYADDRESS
+      - name: BUSINESSENTITYCONTACT
+      - name: EMAILADDRESS
+      - name: PERSON
+      - name: STATEPROVINCE
+
+  - name: AdventureWorks_Sales
+    database: ADVENTUREWORKS_DB
+    schema: SALES
+    description: Sales Schema from Snowflake schema
+    tables: 
+      - name: CUSTOMER
+      - name: SALESORDERDETAIL
+      - name: SALESORDERHEADER
+      - name: SALESPERSON
+      - name: STORE
+      - name: SALESTERRITORY
+
+  - name: AdventureWorks_Production
+    database: ADVENTUREWORKS_DB
+    schema: PRODUCTION
+    description: Production Schema from Snowflake schema
+    tables: 
+      - name: PRODUCT
+
+  - name: AdventureWorks_Purchasing
+    database: ADVENTUREWORKS_DB
+    schema: PURCHASING
+    description: Purchasing Schema from Snowflake schema
+    tables: 
+      - name: PRODUCTVENDOR
+      - name: VENDOR
